@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/hb670444/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hb670444/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hb670444/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.8.7/jackson-databind-2.8.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hb670444/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.7/jackson-core-2.8.7.jar" sourcepath="C:/Users/hb670444/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.7/jackson-core-2.8.7-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hb670444/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.7/jackson-annotations-2.8.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hb670444/.m2/repository/org/apache/commons/commons-collections4/4.0/commons-collections4-4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hb670444/.m2/repository/org/powermock/powermock-core/1.7.1/powermock-core-1.7.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hb670444/.m2/repository/junit/junit/4.10/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hb670444/.m2/repository/org/powermock/powermock-module-junit4/1.7.1/powermock-module-junit4-1.7.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hb670444/.m2/repository/org/powermock/powermock-api-mockito/1.7.1/powermock-api-mockito-1.7.1.jar" sourcepath="C:/Users/hb670444/.m2/repository/org/powermock/powermock-api-mockito/1.7.1/powermock-api-mockito-1.7.1-sources.jar">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.powermock"/>
+			<attribute name="maven.artifactId" value="powermock-api-mockito"/>
+			<attribute name="maven.version" value="1.7.1"/>
+			<attribute name="maven.scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/hb670444/.m2/repository/org/powermock/powermock-api-support/1.7.1/powermock-api-support-1.7.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hb670444/Downloads/postgresql-42.2.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hb670444/.m2/repository/org/json/json/20160810/json-20160810.jar" sourcepath="C:/Users/hb670444/.m2/repository/org/json/json/20160810/json-20160810-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.json"/>
+			<attribute name="maven.artifactId" value="json"/>
+			<attribute name="maven.version" value="20160810"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
