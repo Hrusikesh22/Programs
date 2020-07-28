@@ -1,6 +1,10 @@
 package designpattern.creational;
 
-//https://javarevisited.blogspot.com/2011/12/factory-design-pattern-java-example.html
+
+/*
+ * Read complete reference or Points at the bottom
+ * https://javarevisited.blogspot.com/2011/12/factory-design-pattern-java-example.html
+ */
 
 /*
  * Factory client code
@@ -47,6 +51,7 @@ interface Currency {
 }
 
 class Rupee implements Currency {
+	
 	@Override
 	public String getSymbol() {
 		return "Rs";
@@ -54,6 +59,7 @@ class Rupee implements Currency {
 }
 
 class SGDDollar implements Currency {
+	
 	@Override
 	public String getSymbol() {
 		return "SGD";
@@ -61,13 +67,23 @@ class SGDDollar implements Currency {
 }
 
 class USDollar implements Currency {
+	
 	@Override
 	public String getSymbol() {
 		return "USD";
 	}
 }
 
-
+/*
+ * Why Factory Methods ?
+ * Providing Object creation responsibilities to a separate unit.
+ * So less coupled and highly cohesive code, flexible and consistent manner of object creation.
+ * Object creation is independent from client, object can be created in any suitable way. Let is be from a file, Data Source etc.  
+ * 
+ * 
+ * 
+ * 
+ */
 
 
 
