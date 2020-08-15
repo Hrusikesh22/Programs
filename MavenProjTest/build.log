@@ -1,0 +1,51 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< maventest:MavenProjTest >-----------------------
+[INFO] Building MavenProjTest 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ MavenProjTest ---
+[INFO] Deleting C:\IDE\WORKSPACE\MavenProjTest\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ MavenProjTest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\IDE\WORKSPACE\MavenProjTest\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ MavenProjTest ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\IDE\WORKSPACE\MavenProjTest\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ MavenProjTest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\IDE\WORKSPACE\MavenProjTest\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ MavenProjTest ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\IDE\WORKSPACE\MavenProjTest\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ MavenProjTest ---
+[INFO] Surefire report directory: C:\IDE\WORKSPACE\MavenProjTest\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running maventest.MavenProjTest.abc.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ MavenProjTest ---
+[INFO] Building jar: C:\IDE\WORKSPACE\MavenProjTest\target\MavenProjTest-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ MavenProjTest ---
+[INFO] Installing C:\IDE\WORKSPACE\MavenProjTest\target\MavenProjTest-0.0.1-SNAPSHOT.jar to C:\Users\hb670444\.m2\repository\maventest\MavenProjTest\0.0.1-SNAPSHOT\MavenProjTest-0.0.1-SNAPSHOT.jar
+[INFO] Installing C:\IDE\WORKSPACE\MavenProjTest\pom.xml to C:\Users\hb670444\.m2\repository\maventest\MavenProjTest\0.0.1-SNAPSHOT\MavenProjTest-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.886 s
+[INFO] Finished at: 2020-03-31T21:38:13+05:30
+[INFO] ------------------------------------------------------------------------
