@@ -67,7 +67,9 @@ class BookIterator implements MyIterator<Book> {
     }
 }
 
-interface MyList<E> { MyIterator<E> iterator(); }
+interface MyList<E> { 
+	MyIterator<E> iterator(); 
+}
 
 class BookList implements MyList<Book>
 {

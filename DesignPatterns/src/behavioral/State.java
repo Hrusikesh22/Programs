@@ -4,7 +4,10 @@ package behavioral;
  * https://howtodoinjava.com/design-patterns/behavioral/state-design-pattern/
  * @since 05/08/2020
  * Class behaves differently on Changing STATE of it's one of the property (class/type)
- * Example : Threads (changing thread state)
+ * Example : 
+ * 1> Threads (changing thread state)
+ * 2> Enovia Triggers
+ * 3> AMAZON DELIVERY
  * Advantage:
  * Can easily add new states and new behaviors in the application without impacting other components.
  * It also helps in reducing complexity by reducing the use of 'if-else' statements or switch/case conditional logic.

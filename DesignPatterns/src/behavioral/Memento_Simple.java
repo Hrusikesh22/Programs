@@ -4,9 +4,9 @@ package behavioral;
  * aka - Snapshot/Deep_Copy
  * to restore state of an object to a previous state
  * Example :: 
- * 1> Deep Copy of JSON before modifying and evaluating difference between two JSOn
+ * 1> Deep Copy of JSON before modifying and evaluating difference between two JSON
  * 2> CTRL+Z in editors.
- * 3> DB Rollsback 
+ * 3> DB RollBack 
  */
 public class Memento_Simple {
 
