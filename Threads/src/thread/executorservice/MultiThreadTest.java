@@ -1,4 +1,4 @@
-package thread;
+package thread.executorservice;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,11 @@ import java.util.concurrent.Executors;
 /**
  * @since 18/08/2020
  * 
- * ExecutorService service = Executors.newFixedThreadPool(3);
+ *  ExecutorService exService = new ThreadPoolExecutor(corePoolSize, maxPoolSize, keepAliveTime, unit, workQueue)
+ * 	                			Executors.newFixedThreadPool(3);
+ * 	                			Executors.newSingleThreadExecutor();
+ * 	                			Executors.newCachedThreadPool(3);
+ * corePoolSize : If
  * 		
  * 		service.execute(Runnable)
  * 		service.submit(Callable) 
