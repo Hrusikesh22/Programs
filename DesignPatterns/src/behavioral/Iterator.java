@@ -5,6 +5,7 @@ package behavioral;
  * of elements or collection itself. ITERATORS bear that responsibility.
  * iterator supports multiple simultaneous traversals of a collection from start to end in forward, backward or both directions.
  * https://howtodoinjava.com/design-patterns/behavioral/iterator-design-pattern/
+ * 
  */
 public class Iterator {
 	public static void main(String[] args) 

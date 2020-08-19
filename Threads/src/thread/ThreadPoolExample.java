@@ -22,9 +22,7 @@ public class ThreadPoolExample implements Runnable {
      * @param args
      */
     public static void main(String[] args) {
-    	String metricIndex = "*aaa*";
-    	System.out.println(metricIndex.endsWith("*")? metricIndex.substring(0, metricIndex.length()-1) : metricIndex);
-    	/*//Creating a pool of 5 threads.
+    	//Creating a pool of 5 threads.
     	ExecutorService executor = Executors.newFixedThreadPool(5);
     	
     	//Submitting 10 Tasks
@@ -38,6 +36,6 @@ public class ThreadPoolExample implements Runnable {
 
     	while (!executor.isTerminated()) {
     	}
-    	System.out.println("Finished all threads");*/
+    	System.out.println("Finished all threads");
     }
 }

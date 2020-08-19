@@ -42,7 +42,7 @@ class T2 implements Runnable {
 	@Override
 	public void run() {
 
-		synchronized (this) {
+		synchronized (this) {//locked on t2
 			for(int i = 1; i<= 5; i++ )
 				System.out.println("----- T2 "+i+" ------");
 
