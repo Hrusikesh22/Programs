@@ -87,7 +87,7 @@ class AdjacentMatrixGraph implements Graph {
 		while(!stk.isEmpty()) {
 		
 			int i = stk.peek(); 							//Not POP
-			int j = getAdjUnvisitedVertex(i);
+			int j = getAnyOneAdjUnvisitedVertex(i);
 			
 			if(j != -1) {									//Has Adjacent
 				markVisited(j);
@@ -100,7 +100,7 @@ class AdjacentMatrixGraph implements Graph {
 		resetVerticesVisitedFlag();
 	}
 	
-	public int getAdjUnvisitedVertex(int i) {
+	public int getAnyOneAdjUnvisitedVertex(int i) {
 		for(int j = 0; j < vCount; j++) {
 			if(todArr[i][j] == 1 && !( vertices[j].isVisited()) )
 				return j;
@@ -127,7 +127,7 @@ class AdjacentMatrixGraph implements Graph {
 			int i = q.poll();									//Remove/POLL after each level
 			int j = 0;
 			
-			while( (j = getAdjUnvisitedVertex(i)) != -1) {
+			while( (j = getAnyOneAdjUnvisitedVertex(i)) != -1) {
 				markVisited(j);
 				q.offer(j);
 			}

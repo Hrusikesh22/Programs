@@ -1,0 +1,40 @@
+//Globally declared, or else have to pass in successive calls
+Stack<Integer> stack = new Stack<Integer>;
+
+void topologicalSort(){
+	
+	for(int i = 0; i < vCount; i++){
+	
+		if(!visitedArr[i])//IMP
+			moveInDepth(i);
+	}
+	
+	s.o.p(“Topological Order …………\n”);
+	While(!stack.isEmpty()){
+		s.o.p(stack.pop);
+	}
+}
+
+void moveInDepth(int index){
+	List<Integer> adjList = getAllAdjacentUnVisitedVertices(index);
+	If(list.size()>0){
+		For(int i : list){
+			moveInDepth(i);
+		}
+	}
+
+	Stack.push(index);
+	visitedArr[index] = true;
+}
+
+//This method can be omitted  if we use adjList representation.
+getAllAdjacentUnVisitedVertices(int i){
+	List<Integer> adjList = new ArrayList<Integer>();
+	for(int j = 0; j<vCount; j++){
+		if(adjMatrix[i][j]==1 && !vistitedArr[j]){
+			adjList.add(adjMatrix[i][j]);
+		}
+	}
+	Return adjList;
+}
+	

@@ -50,3 +50,22 @@ public class NewCachedThreadPool {
 		}
 	}
 }
+
+/*
+    O/P:
+	Largest executions: 0
+	Maximum allowed threads: 2147483647
+	Current threads in pool: 0
+	Currently executing threads: 0
+	Total number of threads(ever scheduled): 0
+	Core threads: 0
+	Largest executions: 2
+	Maximum allowed threads: 2147483647
+	Current threads in pool: 2
+	Currently executing threads: 2
+	Total number of threads(ever scheduled): 2
+	Running Task! Thread Name: pool-1-thread-1
+	Running Task! Thread Name: pool-1-thread-2
+	Task Completed! Thread Name: pool-1-thread-1
+	Task Completed! Thread Name: pool-1-thread-2
+ */
