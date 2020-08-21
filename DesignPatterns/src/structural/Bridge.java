@@ -1,5 +1,8 @@
 package structural;
 
+/**
+ * Wiki : "Decouple an abstraction from its implementation so that the two can vary independently"
+ */
 public class Bridge {
 	
 	//"Preferring composition over inheritance"
@@ -21,7 +24,7 @@ public class Bridge {
  * If you want to change Rectangle class, then you may end up changing BlueRectangle and RedRectangle as well.
  * And even if change is color specific then you may need to change Circle classes as well.
  * 
- * 				Share											Color
+ * 				Shape											Color
  * 			-------------------------						-------------------
  * 			|						|						|				   |					
  * 		Rectangle(c:Color)		Circle(c:Color)			   Blue			   	  Red
