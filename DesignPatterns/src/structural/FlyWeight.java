@@ -49,7 +49,9 @@ class PotionFactory {
 	private final  Map<PotionType, Potion> potions = new EnumMap<>(PotionType.class); //IMP: to store
 
 	Potion createPotion(PotionType type) {
+
 		Potion potion = potions.get(type);//Check in store first.
+		
 		if (potion == null) {
 			switch (type) {
 			case HEALING:

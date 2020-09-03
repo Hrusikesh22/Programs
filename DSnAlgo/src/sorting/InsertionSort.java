@@ -5,7 +5,7 @@ package sorting;
  * Each iteration removes an element(let say Marker) from i/p and inserts into the correct position.
  * Left to marker are sorted, and to rights are un-sorted.
  * In each iteration, Marker will be placed at the correct position and then move marker to right by one position.
- * @since 01.08.2020
+ * @since 01/08/2020
  *
  */
 public class InsertionSort {

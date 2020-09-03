@@ -27,6 +27,9 @@ void moveInDepth(int index){
 	visitedArr[index] = true;
 }
 
+
+
+
 //This method can be omitted  if we use adjList representation.
 getAllAdjacentUnVisitedVertices(int i){
 	List<Integer> adjList = new ArrayList<Integer>();

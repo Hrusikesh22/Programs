@@ -44,6 +44,7 @@ abstract class A_Decorator implements Shape {
 }
 
 class DecoratedCircle extends A_Decorator {
+	
 	public DecoratedCircle(Shape shape) {
 		super.shape = shape;
 	}
