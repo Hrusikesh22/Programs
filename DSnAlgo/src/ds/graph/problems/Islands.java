@@ -17,9 +17,9 @@ public class Islands {
 		for(int i=0; i<matrixDimension; i++) {
 			for(int j=0; j<matrixDimension; j++) {
 				if(!visitedArr[i][j]) {
-					noOfIslands(matrix, matrixDimension, i, j, foundIsland);
+					noOfIslands(matrix, matrixDimension, i, j, isParentIsland);
 				}
-				foundIsland = false;
+				isParentIsland = false;
 			}
 		}
 		
@@ -27,9 +27,9 @@ public class Islands {
 	}
 
 	static int noOfIslands = 0;
-	static boolean foundIsland = false;
+	static boolean isParentIsland = false;
 	
-	static void noOfIslands(int[][] matrix, int matrixDimension, int i, int j, boolean foundIsland) {
+	static void noOfIslands(int[][] matrix, int matrixDimension, int i, int j, boolean isParentIsland) {
 		
 		if(!isWithinBoundary(i, j, matrixDimension))
 			return;
@@ -44,19 +44,19 @@ public class Islands {
 		
 		visitedArr[i][j] = true;
 		
-		if(!foundIsland)
+		if(!isParentIsland)
 			noOfIslands += 1; 
 
-		foundIsland = true;
+		isParentIsland = true;
 		
-		noOfIslands(matrix, matrixDimension, i-1, j, foundIsland);//Top
-		noOfIslands(matrix, matrixDimension, i+1, j, foundIsland);//Bottom
-		noOfIslands(matrix, matrixDimension, i, j-1, foundIsland);//left
-		noOfIslands(matrix, matrixDimension, i, j+1, foundIsland);//right
-		noOfIslands(matrix, matrixDimension, i-1, j-1, foundIsland);//N-W
-		noOfIslands(matrix, matrixDimension, i-1, j+1, foundIsland);//N-E
-		noOfIslands(matrix, matrixDimension, i+1, j-1, foundIsland);//S-W
-		noOfIslands(matrix, matrixDimension, i+1, j+1, foundIsland);//S-E
+		noOfIslands(matrix, matrixDimension, i-1, j, isParentIsland);//Top
+		noOfIslands(matrix, matrixDimension, i+1, j, isParentIsland);//Bottom
+		noOfIslands(matrix, matrixDimension, i, j-1, isParentIsland);//left
+		noOfIslands(matrix, matrixDimension, i, j+1, isParentIsland);//right
+		noOfIslands(matrix, matrixDimension, i-1, j-1, isParentIsland);//N-W
+		noOfIslands(matrix, matrixDimension, i-1, j+1, isParentIsland);//N-E
+		noOfIslands(matrix, matrixDimension, i+1, j-1, isParentIsland);//S-W
+		noOfIslands(matrix, matrixDimension, i+1, j+1, isParentIsland);//S-E
 	}
 	
 	static boolean isWithinBoundary(int i, int j, int matrixSize) {
