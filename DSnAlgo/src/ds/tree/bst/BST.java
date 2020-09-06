@@ -55,7 +55,7 @@ public class BST {
 			
 			if(TreeUtils.hasTwoChildren(root)) {
 				BTNode IOPredecessor = getInOrderPredecessor(root.getLeft());
-				root.setData(IOPredecessor.getData());				// Copy InOrderPredecessor node value to the matching node to be deleted.
+				root.setData(IOPredecessor.getData());							// Copy InOrderPredecessor node value to the matching node to be deleted.
 				root.setLeft(delete(root.getLeft(), IOPredecessor.getData()));	//Now delete InOrderPredecessor node.
 			} 
 			else if(TreeUtils.hasOneChild(root)) {
@@ -101,7 +101,7 @@ public class BST {
 		
 		List<Integer> result = new ArrayList<Integer>();
 		
-		//NOTE: PQ doesn't allow to insert 'null', so LinkedList instead
+		//NOTE: PQ doesn't allow to insert 'null', so LinkedList instead. Also PQ is a heap
 		//Queue<TreeNode> q = new PriorityQueue<TreeNode>(); 
 		
 		Queue<BTNode> q = new LinkedList<BTNode>();
